@@ -145,10 +145,21 @@ body.light-theme {
   transition: opacity 0.25s ease-in;
 }
 
+.dropdown-menu {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--primary-background-color);
+}
+
+.dropdown-menu > a {
+  color: var(--light-color-alt);
+}
+
 .list {
   display: flex;
   align-items: center;
   gap: var(--gap);
+  padding-top: 20px;
 }
 
 .menu > .list {
@@ -758,6 +769,9 @@ body.light-theme {
   z-index: -10;
 }
 /* OPEN/CLOSE MODAL */
+.modalBtn {
+  padding: 0;
+}
 .openModal {
   visibility: visible;
   z-index: 10;
@@ -781,7 +795,7 @@ body.light-theme {
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  color: gold;
+  color: rgb(216, 116, 116);
   cursor: pointer;
   transition: var(--transition);
 }
@@ -792,6 +806,7 @@ body.light-theme {
 
 .dropdown {
   padding: 0;
+  margin: 0;
 }
 
 @media screen and (min-width: 700px) {

@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mimi Anaman | Post</title>
+    <title>Mimi Anaman | Home</title>
     <!-- Favicon -->
     <link
       rel="icon"
@@ -15,6 +15,12 @@
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
     />
     <!-- Swiper.js styles -->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
@@ -31,12 +37,29 @@
         <div class="menu" id="menu">
           <ul class="list">
             <li class="list-item">
-              <a href="./index.html" class="list-link">Home</a>
+              <a href="./index.html" class="list-link current">Home</a>
             </li>
             <li class="list-item">
-              <a href="./categories.html" class="list-link current"
-                >Categories</a
-              >
+              <div class="dropdown">
+                <button
+                  class="list-link dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Categories
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Travel</a>
+                  <a class="dropdown-item" href="#">Health</a>
+                  <a class="dropdown-item" href="#">Technology</a>
+                  <a class="dropdown-item" href="#">Nature</a>
+                  <a class="dropdown-item" href="#">Fitness</a>
+                  <a class="dropdown-item" href="#">Food</a>
+                </div>
+              </div>
             </li>
             <li class="list-item">
               <a href="./articles.html" class="list-link">Articles</a>
@@ -48,6 +71,42 @@
         </div>
 
         <div class="list list-right">
+          <div class="">
+            <button type="button" class="btn modalBtn form-btn">
+              <i class="ri-mail-send-line"></i>
+            </button>
+            <!-- Modal -->
+            <div class="modalOverlay">
+              <div class="modalContainer">
+                <!-- content -->
+                <h3>
+                  <h2 class="title section-title" data-name="Newsletter">
+                    Newsletter
+                  </h2>
+                  <div class="form-container-inner">
+                    <h6 class="title newsletter-title">
+                      Subscribe to Mimi Anaman
+                    </h6>
+
+                    <form action="" class="form">
+                      <input
+                        class="form-input"
+                        type="text"
+                        placeholder="Enter your email address"
+                      />
+                      <button class="btn form-btn" type="submit">
+                        <i class="ri-mail-send-line"></i>
+                      </button>
+                    </form>
+                  </div>
+                </h3>
+                <button class="closeBtn">
+                  <ion-icon name="close-circle-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+
           <div class="icon-box place-items-center" id="theme-toggle-btn">
             <i class="ri-sun-line sun-icon"></i>
             <i class="ri-moon-line moon-icon"></i>
@@ -71,12 +130,11 @@
 
           <!-- <a href="#" class="list-link screen-sm-hidden">Sign in</a> -->
           <!-- <a href="#" class="btn sign-up-btn fancy-border screen-sm-hidden">
-            <span>Sign up</span>
-          </a> -->
+              <span>Sign up</span>
+            </a> -->
         </div>
       </nav>
     </header>
-
     <!-- Search -->
     <div class="search-form-container container" id="search-form-container">
       <div class="form-container">
@@ -294,5 +352,28 @@
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <!-- Custom script -->
     <script src="./assets/js/main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
