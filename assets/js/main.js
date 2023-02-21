@@ -94,3 +94,16 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
+
+//modal implementation
+
+const modalBtn = document.querySelector(".modalBtn");
+const modal = document.querySelector(".modalOverlay");
+const closeBtn = document.querySelector(".closeBtn");
+
+modalBtn.addEventListener("click", function () {
+  modal.classList.add("openModal");
+});
+closeBtn.addEventListener("click", function () {
+  modal.classList.remove("openModal");
+});

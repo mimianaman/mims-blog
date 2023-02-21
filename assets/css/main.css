@@ -3,6 +3,7 @@
 
 /* Custom properties */
 :root {
+  --clr-white: #fff;
   --light-color: rgb(216, 116, 116);
   --light-color-alt: #afb6cd;
   --primary-background-color: #040b21;
@@ -599,7 +600,7 @@ body.light-theme {
 }
 
 .newsletter-description {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 /* Footer */
@@ -741,6 +742,52 @@ body.light-theme {
 .author-about .social-media {
   margin-top: auto;
   margin-bottom: 0;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(73, 166, 233, 0.5);
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+  visibility: hidden;
+  z-index: -10;
+}
+/* OPEN/CLOSE MODAL */
+.openModal {
+  visibility: visible;
+  z-index: 10;
+}
+.modalContainer {
+  background: var(--primary-background-color);
+  border-radius: var(--radius);
+  width: 30vw;
+  height: 28vh;
+  padding: 1rem 0;
+  max-width: var(--fixed-width);
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: var(--clr-red-dark);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.closeBtn:hover {
+  color: var(--clr-red-light);
+  transform: scale(1.3);
 }
 
 @media screen and (min-width: 700px) {
