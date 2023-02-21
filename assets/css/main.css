@@ -781,12 +781,12 @@ body.light-theme {
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-red-dark);
+  color: gold
   cursor: pointer;
   transition: var(--transition);
 }
 .closeBtn:hover {
-  color: var(--clr-red-light);
+  color: crimson;
   transform: scale(1.3);
 }
 
