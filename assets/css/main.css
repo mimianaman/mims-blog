@@ -781,13 +781,17 @@ body.light-theme {
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  color: gold
+  color: gold;
   cursor: pointer;
   transition: var(--transition);
 }
 .closeBtn:hover {
   color: crimson;
   transform: scale(1.3);
+}
+
+.dropdown {
+  padding: 0;
 }
 
 @media screen and (min-width: 700px) {
