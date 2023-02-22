@@ -690,7 +690,7 @@ Menu
   object-fit: cover;
   height: 8rem;
   width: auto;
-  border: 0.25rem solid var(--clr-gold);
+  border: 0.25rem solid brown;
   border-radius: var(--radius);
 }
 .item-info header {
