@@ -37,41 +37,12 @@
         <div class="menu" id="menu">
           <ul class="list">
             <li class="list-item">
-              <a href="./index.html" class="list-link current">Home</a>
+              <a href="./index.html" class="list-link">Home</a>
             </li>
             <li class="list-item">
-              <div class="dropdown">
-                <button
-                  class="list-link dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Categories
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="./categories/travel.html"
-                    >Travel</a
-                  >
-                  <a class="dropdown-item" href="./categories/health.html"
-                    >Health</a
-                  >
-                  <a class="dropdown-item" href="./categories/tech.html"
-                    >Technology</a
-                  >
-                  <a class="dropdown-item" href="./categories/nature.html"
-                    >Nature</a
-                  >
-                  <a class="dropdown-item" href="./categories/fitness.html"
-                    >Fitness</a
-                  >
-                  <a class="dropdown-item" href="./categories/food.html"
-                    >Food</a
-                  >
-                </div>
-              </div>
+              <a href="./categories.html" class="list-link current"
+                >Categories</a
+              >
             </li>
             <li class="list-item">
               <a href="./articles.html" class="list-link">Articles</a>
@@ -170,68 +141,73 @@
       </div>
     </div>
 
-    <!-- Popular tags -->
-    <section style="margin-top: 4.5rem" class="popular-tags section">
-      <div class="container">
-        <h2 class="title section-title" data-name="Popular tags">
-          Popular tags
-        </h2>
-
-        <div class="popular-tags-container d-grid">
-          <a href="#" class="article">
-            <span class="tag-name">#Travel</span>
-            <img
-              src="./assets/images/tags/travel-tag.jpg"
-              alt=""
-              class="article-image"
-            />
-          </a>
-
-          <a href="#" class="article">
-            <span class="tag-name">#Food</span>
-            <img
-              src="./assets/images/tags/food-tag.jpg"
-              alt=""
-              class="article-image"
-            />
-          </a>
-
-          <a href="#" class="article">
-            <span class="tag-name">#Technology</span>
-            <img
-              src="./assets/images/tags/technology-tag.jpg"
-              alt=""
-              class="article-image"
-            />
-          </a>
-
-          <a href="#" class="article">
-            <span class="tag-name">#Health</span>
-            <img
-              src="./assets/images/tags/health-tag.jpg"
-              alt=""
-              class="article-image"
-            />
-          </a>
-
-          <a href="#" class="article">
-            <span class="tag-name">#Nature</span>
-            <img
-              src="./assets/images/tags/nature-tag.jpg"
-              alt=""
-              class="article-image"
-            />
-          </a>
-
-          <a href="#" class="article">
-            <span class="tag-name">#Fitness</span>
-            <img
-              src="./assets/images/tags/fitness-tag.jpg"
-              alt=""
-              class="article-image"
-            />
-          </a>
-        </div>
+    <section class="filtermenu">
+      <!-- title -->
+      <div class="title">
+        <h2>our menu</h2>
+        <div class="underline"></div>
+      </div>
+      <!-- filter buttons -->
+      <div class="btn-container">
+        <!-- <button type="button" class="filter-btn" data-id="all">all</button>
+        <button type="button" class="filter-btn" data-id="breakfast">
+          breakfast
+        </button>
+        <button type="button" class="filter-btn" data-id="lunch">lunch</button>
+        <button type="button" class="filter-btn" data-id="shakes">
+          shakes
+        </button> -->
+      </div>
+      <!-- menu items -->
+      <div class="section-center">
+        <!-- single item -->
+        <article class="menu-item">
+          <img src="./menu-item.jpeg" alt="menu item" class="photo" />
+          <div class="item-info">
+            <header>
+              <h4>buttermilk pancakes</h4>
+              <h4 class="price">$15</h4>
+            </header>
+            <p class="item-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+              laboriosam excepturi! Quo, officia.
+            </p>
+          </div>
+        </article>
+        <!-- end of single item -->
+        <!-- single item -->
+        <article class="menu-item">
+          <img src="./menu-item.jpeg" alt="menu item" class="photo" />
+          <div class="item-info">
+            <header>
+              <h4>buttermilk pancakes</h4>
+              <h4 class="price">$15</h4>
+            </header>
+            <p class="item-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+              laboriosam excepturi! Quo, officia.
+            </p>
+          </div>
+        </article>
+        <!-- end of single item -->
+        <!-- single item -->
+        <article class="menu-item">
+          <img src="./menu-item.jpeg" alt="menu item" class="photo" />
+          <div class="item-info">
+            <header>
+              <h4>buttermilk pancakes</h4>
+              <h4 class="price">$15</h4>
+            </header>
+            <p class="item-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+              laboriosam excepturi! Quo, officia.
+            </p>
+          </div>
+        </article>
+        <!-- end of single item -->
       </div>
     </section>
 
@@ -336,6 +312,7 @@
     <!-- Swiper.js -->
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <!-- Custom script -->
+    <script src="./assets/js/filter.js"></script>
     <script src="./assets/js/main.js"></script>
     <script
       type="module"
