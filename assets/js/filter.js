@@ -148,7 +148,7 @@ const menu = [
     title: "buttermilk pancakes",
     category: "technology",
     date: "Dec 5th 2023",
-    img: "./images/quick_read/quick_read_2.jpg",
+    img: "../images/favicon.png",
     desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
   },
   {
