@@ -107,3 +107,27 @@ modalBtn.addEventListener("click", function () {
 closeBtn.addEventListener("click", function () {
   modal.classList.remove("openModal");
 });
+
+const sendNotification = document.querySelector(".form-btn");
+
+// sendNotification.addEventListener("click", function(){
+//   Notification.requestPermission().then(great => {
+//     alert(great)
+//   })
+// })
+
+sendNotification.addEventListener("click", function () {
+  Notification.requestPermission().then((permission) => {
+    if (permission === "granted") {
+      const myFirstNotif = new Notification("Successful", {
+        body: "You Subscribed to MimiAnaman.com",
+        data: { Asher: "Perfection" },
+        icon: "./images/favicon.png",
+        // tag: "Warning Message"
+      });
+      myFirstNotif.addEventListener("close", (e) => {
+        // alert("well done!!!!!!!");
+      });
+    }
+  });
+});
