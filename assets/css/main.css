@@ -685,6 +685,7 @@ Menu
 .menu-item {
   display: flex;
   max-width: 20rem;
+  justify-content: space-evenly;
 }
 .photo {
   object-fit: cover;
