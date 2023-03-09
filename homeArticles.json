@@ -1,0 +1,54 @@
+{
+    "posts": [
+        {
+            "sys": { "id" : "nature"},
+            "fields": {
+              "title": "Sample article title",
+              "description": "Classic, best suits man with a fuller build",
+              "read": "3 min read",
+              "date": "23 Dec 2022",
+              "image": { "fields": {"file": {"url": "./assets/images/trending/trending_1.jpg"}}}
+            }
+        },
+        {
+            "sys": { "id" : "technology"},
+            "fields": {
+              "title": "Sample article title",
+              "description": "Classic, best suits man with a fuller build",
+              "read": "3 min read",
+              "date": "23 Dec 2022",
+              "image": { "fields": {"file": {"url": "./assets/images/trending/trending_2.jpg"}}}
+            }
+        },
+        {
+            "sys": { "id" : "travel"},
+            "fields": {
+              "title": "Sample article title",
+              "description": "Classic, best suits man with a fuller build",
+              "read": "3 min read",
+              "date": "23 Dec 2022",
+              "image": { "fields": {"file": {"url": "./assets/images/trending/trending_3.jpg"}}}
+            }
+        },
+        {
+            "sys": { "id" : "food"},
+            "fields": {
+              "title": "Sample article title",
+              "description": "Classic, best suits man with a fuller build",
+              "read": "3 min read",
+              "date": "23 Dec 2022",
+              "image": { "fields": {"file": {"url": "./assets/images/trending/trending_4.jpg"}}}
+            }
+        },
+        {
+            "sys": { "id" : "health"},
+            "fields": {
+              "title": "Sample article title",
+              "description": "Classic, best suits man with a fuller build",
+              "read": "3 min read",
+              "date": "23 Dec 2022",
+              "image": { "fields": {"file": {"url": "./assets/images/trending/trending_5.jpg"}}}
+            }
+        }
+    ]
+}
