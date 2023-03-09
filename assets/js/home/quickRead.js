@@ -1,21 +1,19 @@
-let shop = document.getElementById("firstRow");
-
-
+let quickRead = document.getElementById("quickRead");
 
 // getting products implementation below
-class IndexProducts {
-  async getProducts(){
+class QuickRead {
+  async getPosts(){
     try {
-      let result = await fetch("health.json");
+      let result = await fetch("quick.json");
       let data = await result.json();
-      let products = data.items;
-      products = products.map(item => {
-        const {title, price, description} = item.fields;
-        const {id} = item.sys;
-        const image = item.fields.image.fields.file.url;
-        return {title, price, description, id, image};
+      let posts = data.posts;
+      posts = posts.map(post => {
+        const {title, date, description, read} = post.fields;
+        const {id} = post.sys;
+        const image = post.fields.image.fields.file.url;
+        return {title, date, description, id, image, read};
       })
-      return products;
+      return posts;
     } catch (error) {
       console.log(error);      
     }
@@ -23,42 +21,36 @@ class IndexProducts {
 }
 
 // display products implementation
-class IndexUI {
-  loadAllIndexProducts(products){
-    let indexItemResult = "";
-    products.forEach(product => {
-      indexItemResult += `
-      <!-- single Product -->
-      <div class="card">
-      <div class="product">
-      <img class="itemImage" src=${product.image} />
-        <div class="description">
-          <span class="itemTitle">${product.title}</span> 
-          <h5>${product.description}</h5>         
-        </div>
-        <a class="shopNow" onclick="window.location.href='categories.html'">Shop Now</a>
-        <div class="priceBtns">
-        <h4 class="itemPrice">Ghc ${product.price}</h4>
-        <!--  -->
-        </div>    
-      </div>     
-      </div>  
-      <!-- single product ends here -->
-      `      
+class QuickPostsUI {
+  loadAllQuickRead(posts){
+    let indexPostResult = "";
+    posts.forEach(post => {
+      indexPostResult += `<a href="#" class="article swiper-slide">
+      <img src=${post.image} alt="" class="article-image">
+
+      <div class="article-data-container">
+          <div class="article-data">
+              <span>${post.date}</span>
+              <span class="article-data-spacer"></span>
+              <span>${post.read}</span>
+          </div>
+          <h3 class="title article-title">${post.title}</h3>
+      </div>
+  </a>`      
     });
     
-    shop.innerHTML = indexItemResult;
+    quickRead.innerHTML = indexPostResult;
   }
 }
 
 // DOM load event 
 document.addEventListener("DOMContentLoaded", ()=>{
-  const ui = new IndexUI();
-  const products = new IndexProducts();
+  const ui = new QuickPostsUI();
+  const posts = new QuickRead();
 
-  //get product items
-  products.getProducts().then(products => {
-    ui.loadAllIndexProducts(products);
-    Storage.saveCartItems(products);
+  //get product Posts
+  posts.getPosts().then(posts => {
+    ui.loadAllQuickRead(posts);
   })
 })
+
