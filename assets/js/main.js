@@ -131,3 +131,65 @@ sendNotification.addEventListener("click", function () {
     }
   });
 });
+
+let trending = document.getElementById("trendingPosts");
+
+// getting products implementation below
+class TrendingPosts {
+  async getPosts(){
+    try {
+      let result = await fetch("homeArticles.json");
+      let data = await result.json();
+      let posts = data.posts;
+      posts = posts.map(post => {
+        const {title, date, description, read} = post.fields;
+        const {id} = post.sys;
+        const image = post.fields.image.fields.file.url;
+        return {title, date, description, id, image, read};
+      })
+      return posts;
+    } catch (error) {
+      console.log(error);      
+    }
+  }
+}
+
+// display products implementation
+class PostsUI {
+  loadAllTrendingPosts(posts){
+    let indexPostResult = "";
+    posts.forEach(post => {
+      indexPostResult += `<a href="#" class="trending-news-box">
+      <div class="trending-news-img-box">
+          <img src=${post.image} alt="" class="article-image">
+      </div>
+
+      <div class="trending-news-data">
+
+          <div class="article-data">
+              <span>${post.date}</span>
+              <span class="article-data-spacer"></span>
+              <span>${post.read}</span>
+          </div>
+
+          <h3 class="title article-title">${post.title}</h3>
+
+      </div>
+  </a>`      
+    });
+    
+    trending.innerHTML = indexPostResult;
+  }
+}
+
+// DOM load event 
+document.addEventListener("DOMContentLoaded", ()=>{
+  const ui = new PostsUI();
+  const posts = new TrendingPosts();
+
+  //get product Posts
+  posts.getPosts().then(posts => {
+    ui.loadAllTrendingPosts(posts);
+  })
+})
+
