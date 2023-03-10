@@ -59,6 +59,66 @@
             "date": "23 Dec 2022",
             "image": { "fields": {"file": {"url": "./assets/images/quick_read/quick_read_1.jpg"}}}
           }
+      },
+      {
+        "sys": { "id" : "nature"},
+        "fields": {
+          "title": "Sample article title",
+          "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.",
+          "read": "3 min read",
+          "date": "23 Dec 2022",
+          "image": { "fields": {"file": {"url": "./assets/images/quick_read/quick_read_6.jpg"}}}
+        }
+    },
+    {
+        "sys": { "id" : "technology"},
+        "fields": {
+          "title": "Sample article title",
+          "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.",
+          "read": "3 min read",
+          "date": "23 Dec 2022",
+          "image": { "fields": {"file": {"url": "./assets/images/quick_read/quick_read_5.jpg"}}}
+        }
+    },
+    {
+        "sys": { "id" : "travel"},
+        "fields": {
+          "title": "Sample article title",
+          "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.",
+          "read": "3 min read",
+          "date": "23 Dec 2022",
+          "image": { "fields": {"file": {"url": "./assets/images/quick_read/quick_read_4.jpg"}}}
+        }
+    },
+    {
+        "sys": { "id" : "food"},
+        "fields": {
+          "title": "Sample article title",
+          "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.",
+          "read": "3 min read",
+          "date": "23 Dec 2022",
+          "image": { "fields": {"file": {"url": "./assets/images/quick_read/quick_read_3.jpg"}}}
+        }
+    },
+    {
+        "sys": { "id" : "health"},
+        "fields": {
+          "title": "Sample article title",
+          "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.",
+          "read": "3 min read",
+          "date": "23 Dec 2022",
+          "image": { "fields": {"file": {"url": "./assets/images/quick_read/quick_read_2.jpg"}}}
+        }
+    },
+    {
+      "sys": { "id" : "health"},
+      "fields": {
+        "title": "Sample article title",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.",
+        "read": "3 min read",
+        "date": "23 Dec 2022",
+        "image": { "fields": {"file": {"url": "./assets/images/quick_read/quick_read_1.jpg"}}}
       }
+  }
     ]
 }
