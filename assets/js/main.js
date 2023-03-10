@@ -156,7 +156,7 @@ class TrendingPosts {
 
 // display products implementation
 class PostsUI {
-  loadAllTrendingPosts(posts){
+  loadAllTrendingPost(posts){
     let indexPostResult = "";
     posts.forEach(post => {
       indexPostResult += `<a href="#" class="trending-news-box">
@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
   //get product Posts
   posts.getPosts().then(posts => {
-    ui.loadAllTrendingPosts(posts);
+    ui.loadAllTrendingPost(posts);
   })
 })
 
