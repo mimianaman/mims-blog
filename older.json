@@ -7,7 +7,7 @@
               "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.",
               "read": "3 min read",
               "date": "23 Dec 2022",
-              "image": { "fields": {"file": {"url": "./assets/images/quick_read/quick_read_1.jpg"}}}
+              "image": { "fields": {"file": {"url": "./assets/images/older_posts/older_posts_6.jpg"}}}
             }
         },
         {
@@ -17,7 +17,7 @@
               "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.",
               "read": "3 min read",
               "date": "23 Dec 2022",
-              "image": { "fields": {"file": {"url": "./assets/images/quick_read/quick_read_2.jpg"}}}
+              "image": { "fields": {"file": {"url": "./assets/images/older_posts/older_posts_5.jpg"}}}
             }
         },
         {
@@ -27,7 +27,7 @@
               "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.",
               "read": "3 min read",
               "date": "23 Dec 2022",
-              "image": { "fields": {"file": {"url": "./assets/images/quick_read/quick_read_3.jpg"}}}
+              "image": { "fields": {"file": {"url": "./assets/images/older_posts/older_posts_4.jpg"}}}
             }
         },
         {
@@ -37,7 +37,7 @@
               "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.",
               "read": "3 min read",
               "date": "23 Dec 2022",
-              "image": { "fields": {"file": {"url": "./assets/images/quick_read/quick_read_4.jpg"}}}
+              "image": { "fields": {"file": {"url": "./assets/images/older_posts/older_posts_3.jpg"}}}
             }
         },
         {
@@ -47,7 +47,7 @@
               "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.",
               "read": "3 min read",
               "date": "23 Dec 2022",
-              "image": { "fields": {"file": {"url": "./assets/images/quick_read/quick_read_5.jpg"}}}
+              "image": { "fields": {"file": {"url": "./assets/images/older_posts/older_posts_2.jpg"}}}
             }
         },
         {
@@ -57,7 +57,7 @@
             "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique a tempore sapiente corporis, eaque fuga placeat odit voluptatibus.",
             "read": "3 min read",
             "date": "23 Dec 2022",
-            "image": { "fields": {"file": {"url": "./assets/images/quick_read/quick_read_6.jpg"}}}
+            "image": { "fields": {"file": {"url": "./assets/images/older_posts/older_posts_1.jpg"}}}
           }
       }
     ]
