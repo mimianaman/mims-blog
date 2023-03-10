@@ -1,10 +1,10 @@
-let quickRead = document.getElementById("quickRead");
+let hotArticles = document.getElementById("hotArticles");
 
 // getting products implementation below
-class QuickRead {
+class MainHotPosts {
   async getPosts(){
     try {
-      let result = await fetch("quick.json");
+      let result = await fetch("mainHot.json");
       let data = await result.json();
       let posts = data.posts;
       posts = posts.map(post => {
@@ -21,36 +21,43 @@ class QuickRead {
 }
 
 // display products implementation
-class QuickPostsUI {
-  loadAllQuickRead(posts){
+class MainHotUI {
+  loadAllMainHotPosts(posts){
     let indexPostResult = "";
     posts.forEach(post => {
-      indexPostResult += `<a href="#" class="article swiper-slide">
-      <img src=${post.image} alt="" class="article-image">
-
-      <div class="article-data-container">
-          <div class="article-data">
-              <span>${post.date}</span>
-              <span class="article-data-spacer"></span>
-              <span>${post.read}</span>
-          </div>
-          <h3 class="title article-title">${post.title}</h3>
+      indexPostResult += `<a href="./post.html" class="trending-news-box">
+      <div class="trending-news-img-box">
+        <img
+          src=${post.image}
+          alt=""
+          class="article-image"
+        />
       </div>
-  </a>`      
+
+      <div class="trending-news-data">
+        <div class="article-data">
+          <span>${post.date}</span>
+          <span class="article-data-spacer"></span>
+          <span>${post.read}</span>
+        </div>
+
+        <h3 class="title article-title">${post.title}</h3>
+      </div>
+    </a>`      
     });
     
-    quickRead.innerHTML = indexPostResult;
+    hotArticles.innerHTML = indexPostResult;
   }
 }
 
 // DOM load event 
 document.addEventListener("DOMContentLoaded", ()=>{
-  const ui = new QuickPostsUI();
-  const posts = new QuickRead();
+  const ui = new MainHotUI();
+  const posts = new MainHotPosts();
 
   //get product Posts
   posts.getPosts().then(posts => {
-    ui.loadAllQuickRead(posts);
+    ui.loadAllMainHotPosts(posts);
   })
 })
 
